@@ -1,9 +1,12 @@
 import "./prov.css"
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Table, Button, Container, Modal, ModalBody, ModalHeader, FormGroup, ModalFooter } from "reactstrap";
 import { FaFileDownload } from "react-icons/fa";
 import { FaUserPlus } from "react-icons/fa";
 import { ValueGetterGrid } from './prueba'
-import { Chucho } from './Chucho'
-import { ListaCuadro2 } from "./ListaCuadro2";
+import { ListaC } from "./ListaCuadro";
+
 export function Cuadro2() {
     return (
 
@@ -41,29 +44,41 @@ export function Cuadro2() {
                     </div>
                 </div>
                 <div className="botonReportes">
-                    <div className="botones">
-                        <button type="button" class="btn btn-primary"
-                            style={{
-                                background: "#9b9a9a",
-                                border: "#828181"
-                            }}>
+
+
+                    <div >
+                        <Button color="success">
                             <FaUserPlus /> Nuevo
-                        </button>
+                        </Button>
                     </div>
+
+
                     <div className="botones">
-                        <button type="button" class="btn btn-primary"
+                        <Button type="button" class="btn btn-primary"
                             style={{
                                 background: "#9b9a9a",
                                 border: "#828181",
                             }}>
                             <FaFileDownload /> Reportes
-                        </button>
+                        </Button>
                     </div>
 
                 </div>
 
             </div >
-            <ValueGetterGrid />
+            <div
+                className="rounded-3  shadow "
+                style={{
+                    width: "100%",
+                    height: "30rem",
+                    display: "grid",
+                    placeItems: "center",
+                    backgroundColor: "white",
+                    padding: "15px",
+                    margin: "0px 15px 0px 15px"
+                }}>
+                <ListaC />
+            </div>
         </div >
     )
 }

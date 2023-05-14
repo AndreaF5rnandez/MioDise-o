@@ -2,7 +2,7 @@ import { FaRecycle } from "react-icons/fa";
 import { FaShoppingBasket } from "react-icons/fa";
 import { FaClipboardList } from "react-icons/fa";
 import { FaShapes } from "react-icons/fa";
-
+import imgReci from "../asset/img/reciclaje1.png";
 
 
 export function Chico() {
@@ -26,6 +26,9 @@ export function Chico() {
                     </li>
                 </ul>
             </div>
+            {/*<div className="imareci" style={{ width: "10%" }}>
+                <img src={imgReci} />
+    </div>*/}
         </div>
     )
 }

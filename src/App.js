@@ -1,5 +1,6 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Table, Button, Container, Modal, ModalBody, ModalHeader, FormGroup, ModalFooter } from "reactstrap";
 import "./App.css";
 
 import {
@@ -24,10 +25,10 @@ const App = () => {
   return (
     <div>
       <div className="gradient__bg">
-        <Navbar2 />
+        <Navbar33 />
       </div>
       <div>
-        <Login1 />
+        <Proveedores />
       </div>
     </div>
   );
