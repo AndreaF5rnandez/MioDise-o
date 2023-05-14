@@ -1,0 +1,57 @@
+.fondo{
+    box-sizing: border-box;
+    background: #f2f2f2;
+    padding: 20px;
+}
+/* Cuadro1*/
+.flexpadre{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.ID{
+    width: 35%;
+    margin: 0px 0px 5px 15px;
+    border: #9b9a9a;
+}
+.inputsid{
+    display: flex;
+}
+.contenedorfiltart{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonReportes{
+    margin-right: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botones{
+    margin: 0px 10px 0px 20px;
+}
+ /* Cuadro mas chico<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+ .flexxChico{
+    display: flex;
+    flex-direction: column;
+ }
+ .reciclaje{
+    text-align: center;
+    font-size: 3em;
+    color: #76EB70;
+ }
+.navChico{
+    margin-top: 30px;
+}
+
+ /* Cuadro mas chico<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
