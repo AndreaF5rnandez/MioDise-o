@@ -14,9 +14,9 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54B458', endColorstr='#092B0A', GradientType=1 );
 
     /* ie 10+ */
-    background:-ms-linear-gradient(148deg, rgba(9, 43, 10, 1) 0%, rgba(84, 180, 88, 1) 100%);
+    background:-ms-linear-gradient(148deg, rgb(7, 199, 151) 0%, rgb(2, 141, 83) 100%);
 
     /* global 94%+ browsers support */
-    background:linear-gradient(148deg, rgba(9, 43, 10, 1) 0%, rgba(84, 180, 88, 1) 100%);
+    background:linear-gradient(148deg, #03d193 0%, rgb(11, 82, 60) 100%);
 
 }
