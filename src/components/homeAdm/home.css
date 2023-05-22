@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+.fondo {
+    background-image: url("./asset/img/reci4.png");
+  }
+.imgRecii{
+    width: 100%;
+    height: 100hv;
+    opacity: .25;
+}
+.flexa{
+    display: flex;
+    flex-direction: column;
+}
+.flexpadre{
+    display: flex;
+    justify-content: center;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.FlexPadre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.FlexHijo{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.FlexHijo div {
+    width: 15%;
+    height: 100px;
+}
+
+.FlexHijo div button {
+    width: 100%;
+    height: 100%;
+}
+
+.adm h1{
+    color: #d2d0d0;
+}

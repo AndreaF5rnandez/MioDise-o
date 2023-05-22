@@ -1,0 +1,8 @@
+.user{
+    display: flex;
+    justify-content: center;
+}
+
+.user FaRegUserCircle {
+    padding: 20px;
+}

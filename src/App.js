@@ -1,6 +1,5 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Table, Button, Container, Modal, ModalBody, ModalHeader, FormGroup, ModalFooter } from "reactstrap";
 import "./App.css";
 
 import {
@@ -24,17 +23,18 @@ import {
   IngrosoMateriaP,
   Productos,
   IngrosoProducto,
-
+  HomeAdm,
+  NavHome
 } from "./components";
 
 const App = () => {
   return (
     <div>
       <div className="gradient__bg">
-        <Navbar33 />
+        <NavHome />
       </div>
       <div>
-        <  IngrosoMateriaP />
+        <  HomeAdm />
       </div>
     </div>
   );
