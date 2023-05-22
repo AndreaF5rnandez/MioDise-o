@@ -3,6 +3,7 @@ import { Cuadro2 } from './mio'
 import { ValueGetterGrid } from './prueba'
 import { Chico } from "./Cua-chico";
 import { ListaC } from "./ListaCuadro";
+import { ListaC3 } from "./ejem2";
 export function Cuadro1(props) {
   return (
     <div className="flexpadre">
@@ -17,7 +18,7 @@ export function Cuadro1(props) {
         }}>
         <Chico />
       </div>
-      <ListaC />
+      <ListaC3 />
 
     </div>
   )

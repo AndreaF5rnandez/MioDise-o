@@ -18,7 +18,13 @@ import {
   Navbar1,
   Navbar2,
   Navbar33,
-  Navbar4
+  Navbar4,
+  MateriaPrima,
+  Proveedores1,
+  IngrosoMateriaP,
+  Productos,
+  IngrosoProducto,
+
 } from "./components";
 
 const App = () => {
@@ -28,7 +34,7 @@ const App = () => {
         <Navbar33 />
       </div>
       <div>
-        <Proveedores />
+        <  IngrosoMateriaP />
       </div>
     </div>
   );

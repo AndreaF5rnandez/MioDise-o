@@ -9,7 +9,7 @@ export function Chico() {
     return (
         <div className="flexxChico">
             <div className="reciclaje">
-                <FaRecycle style={{ color: "#03d193"}} />
+                <FaRecycle style={{ color: "#03d193" }} />
             </div>
             <div className="navChico">
                 <ul class="nav flex-column">
@@ -26,9 +26,10 @@ export function Chico() {
                     </li>
                 </ul>
             </div>
-            {/*<div className="imareci" style={{ width: "10%" }}>
-                <img src={imgReci} />
-    </div>*/}
         </div>
     )
 }
+
+{/*<div className="imareci" style={{ width: "10%" }}>
+                <img src={imgReci} />
+    </div>*/}

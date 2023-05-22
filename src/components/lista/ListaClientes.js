@@ -1,5 +1,7 @@
 import React from "react";
 
+import { BotonD } from "..";
+
 import LineaCliente from "./LineaCliente";
 
 const ListaClientes = () => {
@@ -18,8 +20,8 @@ const ListaClientes = () => {
         <div
           className="rounded-3  shadow "
           style={{
-            width: "70rem",
-            height: "45rem",
+            width: "65rem",
+            height: "40rem",
             display: "grid",
             placeItems: "center",
             backgroundColor: "white",
@@ -33,11 +35,11 @@ const ListaClientes = () => {
           >
             {/* Scroll de la grilla ,  Barra de scroll a 67rem y el recuadro tiene 70rem, altura de 30rem donde el cuadro tiene 40rem */}
             <div
-              className="rounded-3 py-5 shadow "
+              className="rounded-3 py-5  shadow "
               class="overflow-auto"
               style={{
-                width: "67rem",
-                height: "30rem",
+                width: "62rem",
+                height: "35rem",
                 display: "grid",
                 placeItems: "center",
                 backgroundColor: "white",
@@ -45,18 +47,24 @@ const ListaClientes = () => {
             >
               <table
                 class="table caption-top table-hover "
-                style={{ width: "50rem", placeItems: "center" }}
+                style={{ width: "55rem", placeItems: "center" }}
               >
-                <caption>Lista de Clientes</caption>
+                <caption class="mb-3 mt-2 ">
+                  <h2>Lista de Clientes</h2>
+                  <div class=" float-end me-0 ">
+                    <BotonD />
+                  </div>
+                </caption>
+
                 <thead class="table-light sticky-top ">
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Apellido</th>
-                    <th scope="col">Correo</th>
-                    <th scope="col">Telefono</th>
-                    <th scope="col">Direccion</th>
-                    <th scope="col"> Acciones </th>
+                    <th scope="col">NOMBRE</th>
+                    <th scope="col">APELLIDO</th>
+                    <th scope="col">CORREO</th>
+                    <th scope="col">TELEFONO</th>
+                    <th scope="col">DIRECCION</th>
+                    <th scope="col"> ACCIONES </th>
                   </tr>
                 </thead>
                 <LineaCliente />

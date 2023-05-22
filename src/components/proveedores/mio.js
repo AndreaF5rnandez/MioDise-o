@@ -62,23 +62,66 @@ export function Cuadro2() {
                             <FaFileDownload /> Reportes
                         </Button>
                     </div>
-
                 </div>
-
             </div >
             <div
-                className="rounded-3  shadow "
                 style={{
-                    width: "100%",
-                    height: "30rem",
                     display: "grid",
                     placeItems: "center",
-                    backgroundColor: "white",
-                    padding: "15px",
-                    margin: "0px 15px 0px 15px"
-                }}>
-                <ListaC />
+                    backgroundColor: "#f2f2f2",
+                    paddingTop: "2rem",
+                    paddingBottom: "2rem",
+                }}
+            >
+                <div
+                    className="rounded-3  shadow "
+                    style={{
+                        width: "65rem",
+                        height: "40rem",
+                        display: "grid",
+                        placeItems: "center",
+                        backgroundColor: "white",
+                    }}
+                >
+                    <div
+                        style={{
+                            display: "grid",
+                            placeItems: "center",
+                        }}
+                    >
+                        {/* Scroll de la grilla ,  Barra de scroll a 67rem y el recuadro tiene 70rem, altura de 30rem donde el cuadro tiene 40rem */}
+                        <div
+                            className="rounded-3 py-5  shadow "
+                            class="overflow-auto"
+                            style={{
+                                width: "62rem",
+                                height: "35rem",
+                                display: "grid",
+                                placeItems: "center",
+                                backgroundColor: "white",
+                            }}
+                        >
+                            <table
+                                class="table caption-top table-hover "
+                                style={{ width: "55rem", placeItems: "center" }}
+                            >
+                                <thead class="table-light sticky-top ">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">NOMBRE</th>
+                                        <th scope="col">APELLIDO</th>
+                                        <th scope="col">CORREO</th>
+                                        <th scope="col">TELEFONO</th>
+                                        <th scope="col">DIRECCION</th>
+                                        <th scope="col"> ACCIONES </th>
+                                    </tr>
+                                </thead>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div >
+        </div>
     )
 }

@@ -1,51 +1,100 @@
 export const materiaPrima = [
     {
+
         id: 1,
-        Categoria: 'Plastico',
-        Tipo: 'PET',
+        Sector: "A",
+        Categoria: 'Pet',
         cantidad: 10,
-        Peso: 3,
-        Ingreso: "10-05-2023"
+        Peso: 30,
+        Fecha: "10-05-2023",
     },
     {
         id: 2,
-        Categoria: 'Plastico',
-        Tipo: 'HDPE',
+        Sector: "A",
+        Categoria: 'HDPE',
         cantidad: 10,
         Peso: 3,
-        Ingreso: "10-05-2023"
+        Fecha: "10-05-2023"
     },
     {
         id: 3,
-        Categoria: 'Plastico',
-        Tipo: 'PVC',
+        Sector: "A",
+        Categoria: 'PVC',
         cantidad: 10,
         Peso: 3,
-        Ingreso: "10-05-2023"
+        Fecha: "10-05-2023",
     },
     {
         id: 4,
-        Categoria: 'Plastico',
-        Tipo: 'LDPE',
+        Sector: "A",
+        Categoria: 'LDPE',
         cantidad: 10,
         Peso: 5,
-        Ingreso: "10-08-24"
+        Fecha: "10-05-2023",
     },
     {
         id: 5,
-        Categoria: 'Plastico',
-        Tipo: 'PS',
+        Sector: "A",
+        Categoria: 'PS',
         cantidad: 10,
         Peso: 3,
-        Ingreso: "10-05-2023"
+        Fecha: "10-05-2023",
     },
     {
         id: 6,
-        Categoria: 'Plastico',
-        Tipo: 'O',
+        Sector: "A",
+        Categoria: 'O',
         cantidad: 10,
         Peso: 3,
-        Ingreso: "10-05-2023"
+        Fecha: "10-05-2023",
+    },
+    {
+        id: 7,
+        Sector: "A",
+        Categoria: 'O',
+        cantidad: 10,
+        Peso: 3,
+        Fecha: "10-05-2023",
+    },
+    {
+        id: 8,
+        Sector: "A",
+        Categoria: 'O',
+        cantidad: 10,
+        Peso: 3,
+        Fecha: "10-05-2023",
+    },
+    {
+        id: 9,
+        Sector: "A",
+        Categoria: 'O',
+        cantidad: 10,
+        Peso: 3,
+        Fecha: "10-05-2023",
+    },
+    {
+        id: 10,
+        Sector: "A",
+        Categoria: 'O',
+        cantidad: 10,
+        Peso: 3,
+        Fecha: "10-05-2023",
+    },
+    {
+        id: 11,
+        Sector: "A",
+        Categoria: 'O',
+        cantidad: 10,
+        Peso: 3,
+        Fecha: "10-05-2023",
+    },
+    {
+        id: 12,
+        Sector: "A",
+        Categoria: 'O',
+        cantidad: 10,
+        Peso: 3,
+        Fecha: "10-05-2023",
     },
 
 ];

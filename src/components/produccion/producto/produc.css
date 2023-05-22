@@ -50,7 +50,6 @@
     text-align: center;
     font-size: 3em;
     color: #2ece26;
-    color: #1b8f15;
  }
 .navChico{
     margin-top: 30px;
@@ -73,7 +72,7 @@
     justify-content: space-between;
   }
 
-/*formulario*/
+  /*formulario*/
 .formFlex{
     display: flex;
     flex-direction: column;
@@ -97,4 +96,25 @@
 .materiaP h5{
     margin: 0%;
 }
+.formFlex label{
+    color: #747272;
+}
+
+.formFlex select{
+    color: #747272;
+}
 /*formulario*/
+
+/* Productos*/
+.procBotonos{
+    display: flex;
+    justify-content: flex-end;
+}
+/* Productos*/
+
+.Modal{ 
+    max-width: 60% !important; 
+}
+.imgReporte{
+    text-align: center;
+}

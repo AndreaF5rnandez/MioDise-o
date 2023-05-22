@@ -24,7 +24,7 @@ const LineaProveedores = () => {
             <td></td>
             <td className="centrado">{user.codigopostal}</td>
             <td></td>
-            <td>
+            <td className="centrado">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"

@@ -14,10 +14,11 @@ export class ListaC extends React.Component {
         form: {
             id: '',
             Categoria: '',
-            Tipo: '',
             cantidad: 0,
             Peso: 0,
-            Ingreso: ''
+            Proveedor: "",
+            Precio: 34,
+            Fecha: ""
         },
         modalInsertar: false,
         modalEditar: false,
@@ -56,9 +57,11 @@ export class ListaC extends React.Component {
         lista.map((registro) => {
             if (dato.id == registro.id) {
                 lista[contador].Categoria = dato.Categoria;
-                lista[contador].Tipo = dato.Tipo;
                 lista[contador].cantidad = dato.cantidad;
                 lista[contador].Peso = dato.Peso;
+                lista[contador].Proveedor = dato.Proveedor;
+                lista[contador].Precio = dato.Precio;
+                lista[contador].Fecha = dato.Fecha;
             }
             contador++;
         });
@@ -102,12 +105,13 @@ export class ListaC extends React.Component {
                                 </a>
 
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Plastico y Latas</a></li>
-                                    <li><a class="dropdown-item" href="#">Papeles y Cartones</a></li>
-                                    <li><a class="dropdown-item" href="#">Vidrio </a></li>
-                                    <li><a class="dropdown-item" href="#">Materiales Peligroso</a></li>
-                                    <li><a class="dropdown-item" href="#">Residuos Organicos</a></li>
-                                    <li><a class="dropdown-item" href="#">Varios</a></li>
+                                    <li><a class="dropdown-item" href="#">PET</a></li>
+                                    <li><a class="dropdown-item" href="#">PEAD</a></li>
+                                    <li><a class="dropdown-item" href="#">PVC </a></li>
+                                    <li><a class="dropdown-item" href="#">PEBD</a></li>
+                                    <li><a class="dropdown-item" href="#">PP</a></li>
+                                    <li><a class="dropdown-item" href="#">PS</a></li>
+                                    <li><a class="dropdown-item" href="#">OTROS</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -139,43 +143,90 @@ export class ListaC extends React.Component {
                     className="rounded-3  shadow "
                     style={{
                         width: "100%",
-                        height: "30rem",
+                        height: "29rem",
                         display: "grid",
                         placeItems: "center",
                         backgroundColor: "white",
                         padding: "15px",
                         margin: "0px 15px 0px 15px"
                     }}>
-                    <Container>
-                        <Table>
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Categoria</th>
-                                    <th>Tipo</th>
-                                    <th>Cantidad</th>
-                                    <th>Peso(kg)</th>
-                                    <th>Fecha de Ingreso</th>
-                                    <th>Acciones</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {this.state.materia.map((elemento) => (
+                    <Container style={{
+                        height: "100%",
+                        padding: "15px"
+                    }}>
+                        <div style={{
+                            color: "#9b9a9a",
+                            paddingLeft: "15px"
+                        }}><h2>Materia Prima</h2></div>
+                        <hr style={{
+                            marginTop: "0",
+                        }} />
+                        <div className="scroll-container">
+                            <Table>
+                                <thead style={{
+                                    color: "#ffffff",
+                                    background: "#cac6c6"
+                                }}>
                                     <tr>
-                                        <td>{elemento.id}</td>
-                                        <td>{elemento.Categoria}</td>
-                                        <td>{elemento.Tipo}</td>
-                                        <td>{elemento.cantidad}</td>
-                                        <td>{elemento.Peso}</td>
-                                        <td>{elemento.Ingreso}</td>
-                                        <td>
-                                            <Button onClick={() => this.mostrarModalEditar(elemento)} color="primary">Editar</Button>{'  '}
-                                            <Button onClick={() => this.eliminar(elemento)} color="danger">Eliminar</Button>
-                                        </td>
+                                        <th>ID</th>
+                                        <th>Categoria</th>
+                                        <th>Cantidad</th>
+                                        <th>Peso(kg)</th>
+                                        <th>Proveedor</th>
+                                        <th>Precio</th>
+                                        <th>Fecha de Ingreso</th>
+                                        <th>Acciones</th>
                                     </tr>
-                                ))}
-                            </tbody>
-                        </Table>
+                                </thead>
+                                <tbody>
+                                    {this.state.materia.map((elemento) => (
+                                        <tr>
+                                            <td>{elemento.id}</td>
+                                            <td>{elemento.Categoria}</td>
+                                            <td>{elemento.cantidad}</td>
+                                            <td>{elemento.Peso}</td>
+                                            <td>{elemento.Proveedor}</td>
+                                            <td>{elemento.Precio}</td>
+                                            <td>{elemento.Fecha}</td>
+                                            <td>
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="20"
+                                                    height="20"
+                                                    fill="currentColor"
+                                                    class="bi bi-pencil-square"
+                                                    viewBox="0 0 16 16"
+                                                    type="button"
+                                                    onClick={() => this.mostrarModalEditar(elemento)}
+                                                    data-bs-whatever="@getbootstrap"
+                                                >
+                                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"
+                                                    />
+                                                </svg>
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="20"
+                                                    height="20"
+                                                    fill="currentColor"
+                                                    class="bi bi-trash"
+                                                    viewBox="0 0 16 16"
+                                                    type="button"
+                                                    onClick={() => this.eliminar(elemento)}
+                                                    data-bs-whatever="@getbootstrap"
+                                                >
+                                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                                                    <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                                                </svg>
+
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </Table>
+                        </div>
                     </Container >
                 </div>
                 <Modal isOpen={this.state.modalInsertar}>
