@@ -111,3 +111,9 @@
 .imgReporte{
     text-align: center;
 }
+
+.procBotonos div Button a {
+    text-decoration:none;
+    color: #ffffff;
+    
+}

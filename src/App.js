@@ -34,7 +34,7 @@ const App = () => {
         <NavHome />
       </div>
       <div>
-        <  HomeAdm />
+        <  Productos />
       </div>
     </div>
   );

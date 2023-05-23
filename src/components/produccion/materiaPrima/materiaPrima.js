@@ -109,7 +109,7 @@ export class ListaMateriaPrima extends React.Component {
                         className="rounded-3  shadow "
                         style={{
                             width: "100%",
-                            height: "33rem",
+                            height: "40rem",
                             display: "grid",
                             placeItems: "center",
                             backgroundColor: "white",
@@ -117,7 +117,8 @@ export class ListaMateriaPrima extends React.Component {
                             margin: "0px 15px 0px 15px"
                         }}>
                         <Container style={{
-                            padding: "15px"
+                            padding: "15px",
+                            height: "40rem"
                         }}>
                             <div className="filtros">
                                 <div style={{
@@ -126,6 +127,10 @@ export class ListaMateriaPrima extends React.Component {
                                 }}><h2>Materia Prima</h2></div>
 
                                 <div className="procBotonos">
+                                    <div style={{ marginRight: "20px" }} >
+                                        <Button color="success" >
+                                            <a href="New" > New </a> </Button>
+                                    </div>
                                     <div style={{ marginRight: "20px" }} >
                                         <Button color="success" onClick={() => this.mostartModalReporte()}  >
                                             Reportes </Button>
@@ -140,11 +145,11 @@ export class ListaMateriaPrima extends React.Component {
                             <hr style={{
                                 marginTop: "0",
                             }} />
-                            <div className="scroll-container">
-                                <Table>
+                            <div className="scroll-container" style={{ height: "100%" }} >
+                                <Table style={{ height: "100%" }}>
                                     <thead style={{
                                         color: "#ffffff",
-                                        background: "#cac6c6"
+                                        background: "#cac6c6",
                                     }}>
                                         <tr>
                                             <th>ID</th>

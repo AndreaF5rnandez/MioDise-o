@@ -127,6 +127,10 @@ export class Productoss extends React.Component {
 
                                 <div className="procBotonos">
                                     <div style={{ marginRight: "20px" }} >
+                                        <Button color="success" >
+                                            <a href="New" > New </a> </Button>
+                                    </div>
+                                    <div style={{ marginRight: "20px" }} >
                                         <Button color="success" onClick={() => this.mostartModalReporte()}  >
                                             Reportes
                                         </Button>
