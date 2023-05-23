@@ -12,6 +12,7 @@ export { default as MateriaPrima } from "./produccion/materiaPrima/MateriaPrima0
 export { default as Productos } from "./produccion/producto/Producto";
 export { default as HomeAdm } from "./homeAdm/home"
 export { default as NavHome } from "./navbar/navbarHome"
+export { default as Pedido } from "./produccion/pedidos/Pedido0"
 export { default as Modale } from "./modale/Modale";
 export { default as Navbar2 } from "./navbar/Navbar2";
 export { default as Navbar1 } from "./navbar/Navbar1";

@@ -24,7 +24,8 @@ import {
   Productos,
   IngrosoProducto,
   HomeAdm,
-  NavHome
+  NavHome,
+  Pedido
 } from "./components";
 
 const App = () => {
@@ -34,7 +35,7 @@ const App = () => {
         <NavHome />
       </div>
       <div>
-        <  Productos />
+        <  Pedido />
       </div>
     </div>
   );
