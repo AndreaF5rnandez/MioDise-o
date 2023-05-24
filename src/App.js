@@ -25,17 +25,19 @@ import {
   IngrosoProducto,
   HomeAdm,
   NavHome,
-  Pedido
+  Pedido,
+  ListaUsuario,
+  Usuarioo1
 } from "./components";
 
 const App = () => {
   return (
     <div>
       <div className="gradient__bg">
-        <NavHome />
+        <Navbar33 />
       </div>
       <div>
-        <  Pedido />
+        <  Usuarioo1 />
       </div>
     </div>
   );

@@ -1,0 +1,18 @@
+.centrado {
+  text-align: center;
+}
+
+.pegado {
+  position: sticky;
+  top: 0;
+  background-color: #dcdcdc;
+}
+
+.derecha {
+  text-align: end;
+}
+
+.filtross{
+  display: flex;
+  justify-content: space-between;
+}

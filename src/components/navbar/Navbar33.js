@@ -1,6 +1,7 @@
 import React from "react";
 import '../../App.css';
 import "./Navbar.css"
+import { Table, Button, Container, Modal, ModalBody, ModalHeader, FormGroup, ModalFooter } from "reactstrap";
 const logoImage = require('./logoR.png');
 const hamburguesaMenu = require('./hamb.png');
 
@@ -60,6 +61,10 @@ export function Navbar33() {
                 </nav>
               </nav>
             </nav>
+            <div style={{ margin: "20px" }} >
+              <Button color="success" >
+                Cerrar </Button>
+            </div>
           </div>
         </div>
       </div>

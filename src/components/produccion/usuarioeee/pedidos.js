@@ -11,6 +11,7 @@ import { FaShapes } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Table, Button, Container, Modal, ModalBody, ModalHeader, FormGroup, ModalFooter } from "reactstrap";
 import { materiaPrima } from "./arregloPedido"
+import { BotonCheckBox } from "./botonCheckbox"
 
 
 export class ListaPedidos extends React.Component {
@@ -124,7 +125,8 @@ export class ListaPedidos extends React.Component {
                                 <div style={{
                                     color: "#9b9a9a",
                                     paddingLeft: "15px"
-                                }}><h2>Pedidos</h2></div>
+                                }}><h2>Pedidos</h2>
+                                </div>
 
                                 <div className="procBotonos">
                                     <div style={{ marginRight: "20px" }} >
@@ -148,6 +150,7 @@ export class ListaPedidos extends React.Component {
                                         background: "#cac6c6",
                                     }}>
                                         <tr>
+                                            <th>#</th>
                                             <th>NroPedido</th>
                                             <th>Fecha</th>
                                             <th>Cliente</th>
@@ -160,6 +163,9 @@ export class ListaPedidos extends React.Component {
                                     <tbody>
                                         {this.state.materia.map((elemento) => (
                                             <tr>
+                                                <td scope="row">
+                                                    <BotonCheckBox />
+                                                </td>
                                                 <td>{elemento.NroPedido}</td>
                                                 <td>{elemento.Fecha}</td>
                                                 <td>{elemento.Cliente}</td>
